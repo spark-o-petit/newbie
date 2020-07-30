@@ -17,8 +17,26 @@
     </form>
     <form action="">
       <fieldset>
-        <legend>수강과목</legend>
-        <label for="timeline">영어화화(초급) <input type="text" /></label>
+        <legend>신청자</legend>
+        <label for="student-name">이름<input type="text" /></label>
+        <br />
+        <label for="student-number"
+          >학번<input type="text" maxlength="7" value="7자로 작성하시오"
+        /></label>
+        <br />
+        <label for="student-major"
+          >학과
+          <select name="major">
+            <option value="computer-engineering">컴퓨터공학과</option>
+          </select>
+        </label>
+        <br />
+        <label for="student-contact">
+          연락처
+          <select name="global-number"
+            ><option value="010">010</option></select
+          >-<input type="text" />-<input type="text" />
+        </label>
       </fieldset>
     </form>
     <form action="">
