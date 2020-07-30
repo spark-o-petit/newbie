@@ -11,7 +11,7 @@
       <fieldset>
         <legend>수강과목</legend>
         <label for="timeline"
-          >영어화화(초급) <input type="text" value="오전 9:00 ~ 11:00"
+          >영어화화(초급) <input type="text" value="오전 9:00 ~ 11:00" readonly
         /></label>
       </fieldset>
     </form>
@@ -41,14 +41,25 @@
     </form>
     <form action="">
       <fieldset>
-        <legend>수강과목</legend>
-        <label for="timeline">영어화화(초급) <input type="text" /></label>
+        <legend>교재주문</legend>
+        <label for="textbook-numbers">교재 <input type="range" min="1" max="100" value="1" class="slinder"/></label>
+        <br>
+        <label for="worksheet-numbers">워크시트 <input type="number" min="0" max="100" value="0"></label>
+        <br>
+        <label for="group-numbers">단체주문 <input type="number" min="0" max="100" value="0"/></label>
+        <br>
+        <label for="interest">관심분야-문법, 어휘, 회화, 리스닝 <select name="interest">
+            <option value="grammar">문법</option>
+            <option value="vocabulary">어휘</option>
+            <option value="speacking">회화</option>
+            <option value="listening">리스닝</option>
+        </select></label>
       </fieldset>
     </form>
     <form action="">
       <fieldset>
-        <legend>수강과목</legend>
-        <label for="timeline">영어화화(초급) <input type="text" /></label>
+        <legend>신청과 재입력</legend>
+        <label for="submit-and-reset""><input type="submit" value="submit" /><input type="reset" value="reset"></label>
       </fieldset>
     </form>
   </body>
